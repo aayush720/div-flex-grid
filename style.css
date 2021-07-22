@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin:0;
+}
+body{
+    background-color: #111;
+    height: 100vh;
+   display: flex; /*its a 1-d */
+   /* by this its contnet in mid but not in center .It work on like left=0 */ 
+   justify-content: center;
+    /* by this its in center mid  . Without flex align items not worked*/
+    align-items: center;
+}
+.container{
+    width: 90%;
+    display:grid; /*2-d*/
+    /* its work on column wise so auto fit also and each column is between 250 to 1fr 
+    if screen size small then its divide by row also but size same*/
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); 
+    grid-gap: 1rem; /* gap between columns*/
+}
+.ab{
+    height: 15rem;
+    color: #fff;
+     border:2px solid #fff;
+
+}
